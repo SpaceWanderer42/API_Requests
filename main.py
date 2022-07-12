@@ -10,10 +10,10 @@ class BearerAuth(requests.auth.AuthBase):
 
 #GET
 
-api_url = "https://gorest.co.in/public/v2/users/3061"
-response = requests.get(api_url)
-print(response.json())
-print(response.status_code)
+# api_url = "https://gorest.co.in/public/v2/users"
+# response = requests.get(api_url)
+# print(response.json())
+# print(response.status_code)
 
 
 #POST
@@ -61,3 +61,27 @@ print(response.status_code)
 # response = requests.delete(api_url)
 # print(response.json())
 # print(response.status_code)
+
+# --------------------------------------------
+
+# api_url = "https://gorest.co.in/public/v2/posts"
+# response = requests.get(api_url)
+# print(response.json())
+# print(response.status_code)
+
+# api_url = "https://gorest.co.in/public/v2/posts"
+# todo = {
+#     "id": 4000,
+#     "user_id": 5000,
+#     "title": "ABC",
+#     "body": "YYYYYYYY",
+#     "field": "Amelia X",
+#     "message": "XXXXXX"
+#         }
+# response = requests.post(api_url, json=todo, auth=BearerAuth('3211851a79084b29fb93a85047caf8873f37ea803a3df632be03fb54be5762a0'))
+# print(response.json())
+# print(response.status_code)
+
+# output : [{'field': 'user', 'message': 'must exist'}]
+# 422
+
